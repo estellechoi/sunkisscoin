@@ -1,0 +1,11 @@
+{{define "footer"}}
+    <footer>
+        {{range .}}
+            <div>{{.Data}}</div>
+            <div>{{.Hash}}</div>
+            {{if .PrevHash}}
+                <div>{{.PrevHash}}</div>
+            {{end}}
+        {{end}}
+    </footer>
+{{end}}

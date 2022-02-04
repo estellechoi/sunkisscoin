@@ -1,0 +1,14 @@
+{{define "blocks"}}
+    <html lang="en">
+    {{template "head" .Title}}
+    <body>
+        {{template "header" .Title}}
+        <!-- action="/blocks" -->
+        <form method="POST">
+            <input type="text" placeholder="Your Block" required name="blockData" />
+            <button type="submit">Submit</button>
+        </form>
+        {{template "footer" .Blocks}}
+    </body> 
+    </html>
+{{end}}
