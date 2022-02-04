@@ -1,6 +1,8 @@
-# sunkisscoin
+# Sunkiss Coin (∗❛ᴗ❛∗)
 
-Sunkiss Coin (∗❛ᴗ❛∗)
+Building simple blockchain & Coin !
+
+<br />
 
 ### Install Go
 
