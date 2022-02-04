@@ -1,6 +1,6 @@
 # Sunkiss Coin (∗❛ᴗ❛∗)
 
-Building simple blockchain & Coin !
+Building simple blockchain & coin !
 
 <br />
 
