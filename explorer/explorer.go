@@ -42,13 +42,9 @@ func blocks(rw http.ResponseWriter, r *http.Request) {
 }
 
 func Start() {
-	// chain := blockchain.GetBlockChain()
-	// chain.AddBlock("Second Block")
-	// for _, block := range chain.GetAllBlocks() {
-	// 	fmt.Printf("%s\n", block)
-	// }
-	templates = template.Must(template.ParseGlob(templateDir + "/pages/*.gohtml"))     // **/* does not work in Go
-	templates = template.Must(templates.ParseGlob(templateDir + "/partials/*.gohtml")) // see templates.ParseGlob, not template.ParseGlob
+	// load gohtml templates using pattern, where **/* does not work
+	templates = template.Must(template.ParseGlob(templateDir + "/pages/*.gohtml"))     // use template pkg when loading for the first time
+	templates = template.Must(templates.ParseGlob(templateDir + "/partials/*.gohtml")) // use templates-loaded var to load more via ParseGlob()
 
 	// routes
 	http.HandleFunc("/", home)
